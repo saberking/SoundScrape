@@ -398,7 +398,7 @@ def download_tracks(client, tracks, num_tracks=sys.maxsize, downloadable=False, 
                         mkdir(track_artist)
                     track_filename = join(track_artist, track_filename)
 
-                if exists(track_filename) and folders:
+                if exists(track_filename):
                     puts(colored.yellow("Track already downloaded: ") + colored.white(track_title))
                     continue
 
